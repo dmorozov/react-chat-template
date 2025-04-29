@@ -1,16 +1,15 @@
 import clsx from 'clsx';
-import { Anchor, Box, Grid, Text, Title } from '@mantine/core';
+import { Box, Grid,Text, Title, Anchor } from '@mantine/core';
 import classes from './Chats.module.css';
-
 
 export function Chats() {
   return (
     <Box className={classes.chatsContainer}>
-      <Box className={clsx(classes.containerFluid, classes.h100)} >
-        <Grid.Col className={classes.h100} span={{ base: 12, md: 4, lg: 5, xl: 3 }}>
+      <Grid className={clsx(classes.h100, classes.chatsGrid)} gutter={0}>
+        <Grid.Col className={classes.h100} span={{ base: 12, sm: 4, md: 5, lg: 3, xl: 3 }}>
           1
         </Grid.Col>
-        <Grid.Col className={classes.h100} span={{ base: 12, md: 8, lg: 7, xl: 6 }}>
+        <Grid.Col className={clsx(classes.h100, classes.chat)} span={{ base: 12, sm: 8, md: 7, lg: 6, xl: 6 }}>
           <Title className={classes.title} ta="center" mt={100}>
             Welcome to{' '}
             <Text
@@ -31,10 +30,10 @@ export function Chats() {
             . To get started edit pages/Home.page.tsx file.
           </Text>
         </Grid.Col>
-        <Grid.Col className={classes.h100} span={{ base: 12, md: 5, lg: 4, xl: 3 }}>
+        <Grid.Col className={classes.h100} span={{ base: 12, sm: 12, md: 5, lg: 3, xl: 3 }}>
           3
         </Grid.Col>
-      </Box>
+      </Grid>
     </Box>
   );
 }

@@ -1,29 +1,28 @@
 .chatsContainer {
-  height: 100vh;
+  height: 100% !important;
   width: 100%;
   border: 1px solid red;
+}
+
+.chatsGrid {
+  display: flex;
+  flex-direction: row;
+}
+
+.messages_page__list_scroll {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .h100 {
   height: 100% !important;
 }
 
-.containerFluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.px0 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+.chat {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
