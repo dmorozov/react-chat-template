@@ -1,15 +1,23 @@
 import clsx from 'clsx';
-import { Box, Grid,Text, Title, Anchor } from '@mantine/core';
+import { Anchor, Box, Grid, Text, Title } from '@mantine/core';
 import classes from './Chats.module.css';
+import { ChatsList } from './ChatsList';
+
 
 export function Chats() {
   return (
     <Box className={classes.chatsContainer}>
       <Grid className={clsx(classes.h100, classes.chatsGrid)} gutter={0}>
-        <Grid.Col className={classes.h100} span={{ base: 12, sm: 4, md: 5, lg: 3, xl: 3 }}>
-          1
+        <Grid.Col
+          className={clsx(classes.h100, classes.messages_page__list_scroll)}
+          span={{ base: 12, sm: 4, md: 5, lg: 3, xl: 3 }}
+        >
+          <ChatsList />
         </Grid.Col>
-        <Grid.Col className={clsx(classes.h100, classes.chat)} span={{ base: 12, sm: 8, md: 7, lg: 6, xl: 6 }}>
+        <Grid.Col
+          className={clsx(classes.h100, classes.chat)}
+          span={{ base: 12, sm: 8, md: 7, lg: 6, xl: 6 }}
+        >
           <Title className={classes.title} ta="center" mt={100}>
             Welcome to{' '}
             <Text
