@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { FaArrowLeft, FaCog, FaFileUpload } from 'react-icons/fa';
 import { FiSend } from "react-icons/fi";
-import { ActionIcon, Box, Input, List, TextInput } from '@mantine/core';
+import { ActionIcon, Box, Input, List } from '@mantine/core';
 import { Chat } from '@/models/chat';
 import classes from './ChatThread.module.css';
 
@@ -33,7 +33,13 @@ export function ChatThread({ chat }: ChatThreadProps) {
           <Box className={classes.chat__actions}>
             <List>
               <List.Item>
-                <FaCog />
+                <ActionIcon
+                  variant="filled"
+                  size="md"
+                  radius="xl"
+                >
+                  <FaCog style={{ width: '70%', height: '70%' }} />
+                </ActionIcon>
               </List.Item>
             </List>
           </Box>
