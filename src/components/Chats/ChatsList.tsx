@@ -2,14 +2,7 @@ import clsx from 'clsx';
 import { FaRocketchat, FaSearch } from "react-icons/fa";
 import { Box, Button, List, TextInput } from '@mantine/core';
 import classes from './Chats.module.css';
-
-
-interface Chat {
-  id: string;
-  name: string;
-  lastMessage: string;
-  lastMessageTime: string;
-}
+import { Chat } from '@/models/chat';
 
 interface ChatsListItemProps {
   active?: boolean;
