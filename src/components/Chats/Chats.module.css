@@ -1,5 +1,10 @@
 @import './chat.common.css';
 
+/*
+Example dark/light mode CSS variables
+border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+*/
+
 .chatsContainer {
   height: 100% !important;
   width: 100%;
@@ -15,8 +20,6 @@
 }
 
 .chat {
-  /* border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color); */
 }
 
 .messages_page__list {

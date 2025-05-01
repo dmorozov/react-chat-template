@@ -128,13 +128,6 @@ export function ChatThread({ chat }: ChatThreadProps) {
               }}
             />
 
-            {/* <TextInput
-              classNames={{
-                input: clsx(classes.form_control, classes.custom_form),
-              }}
-              mt="md" placeholder="Enter a question ..."
-            /> */}
-
             <Box className={classes.custom_form__send_img}>
               <FaFileUpload style={{ width: '70%', height: '70%' }} />
             </Box>

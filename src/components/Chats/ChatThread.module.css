@@ -304,3 +304,7 @@
 .custom_form__send_submit:hover {
   background-color: var(--colour-primary-darker);
 }
+
+.custom_form__send_submit:active {
+  transform: translateY(-47%);
+}
