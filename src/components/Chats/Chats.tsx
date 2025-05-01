@@ -1,8 +1,9 @@
 import clsx from 'clsx';
 import { Box, Grid } from '@mantine/core';
 import { Chat } from '@/models/chat';
+import { ChatInfo } from './ChatInfo';
+import { ChatMessages } from './ChatMessages';
 import { ChatsList } from './ChatsList';
-import { ChatThread } from './ChatThread';
 import classes from './Chats.module.css';
 
 
@@ -27,10 +28,10 @@ export function Chats() {
           className={clsx(classes.h100, classes.chat)}
           span={{ base: 12, sm: 8, md: 7, lg: 6, xl: 6 }}
         >
-          <ChatThread chat={currentChat} />
+          <ChatMessages chat={currentChat} />
         </Grid.Col>
         <Grid.Col className={classes.h100} span={{ base: 12, sm: 12, md: 5, lg: 3, xl: 3 }}>
-          3
+          <ChatInfo chat={currentChat} />
         </Grid.Col>
       </Grid>
     </Box>

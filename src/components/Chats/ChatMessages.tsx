@@ -1,16 +1,16 @@
 import clsx from 'clsx';
 import { FaArrowLeft, FaCog, FaFileUpload } from 'react-icons/fa';
 import { FiSend } from "react-icons/fi";
-import { ActionIcon, Box, Input, List, TextInput } from '@mantine/core';
+import { ActionIcon, Box, Input, List } from '@mantine/core';
 import { Chat } from '@/models/chat';
-import classes from './ChatThread.module.css';
+import classes from './ChatMessages.module.css';
 
 
-interface ChatThreadProps {
+interface ChatMessagesProps {
   chat: Chat;
 }
 
-export function ChatThread({ chat }: ChatThreadProps) {
+export function ChatMessages({ chat }: ChatMessagesProps) {
   return (
     <Box className={classes.chat__container}>
       <Box className={classes.chat__wrapper}>
