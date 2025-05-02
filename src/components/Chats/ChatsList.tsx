@@ -3,6 +3,7 @@ import { FaRocketchat, FaSearch } from "react-icons/fa";
 import { Box, Button, List, TextInput } from '@mantine/core';
 import { ChatDto } from '@/models/chat';
 import classes from './Chats.module.css';
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
 
 interface ChatsListItemProps {
@@ -74,7 +75,7 @@ export function ChatsList() {
     <>
       <Box className={classes.messages_page__header}>
         <Box component="span" className={classes.messages_page__title}>
-          Chats
+          Chats <ColorSchemeToggle />
         </Box>
       </Box>
       <Box className={classes.messages_page__search}>
