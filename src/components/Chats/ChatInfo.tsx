@@ -1,8 +1,8 @@
-import { Chat } from "@/models/chat";
+import { ChatDto } from '@/models/chat';
 
 
 interface ChatInfoProps {
-  chat: Chat;
+  chat: ChatDto;
 }
 
 export function ChatInfo({ chat }: ChatInfoProps) {

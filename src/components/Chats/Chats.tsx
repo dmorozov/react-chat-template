@@ -1,17 +1,17 @@
 import clsx from 'clsx';
 import { Box, Grid } from '@mantine/core';
-import { Chat } from '@/models/chat';
+import { ChatDto } from '@/models/chat';
 import { ChatInfo } from './ChatInfo';
 import { ChatMessages } from './ChatMessages';
 import { ChatsList } from './ChatsList';
 import classes from './Chats.module.css';
 
 
-const currentChat: Chat = {
+const currentChat: ChatDto = {
   id: '1',
   name: 'John Doe',
   lastMessage: 'Hello!',
-  lastMessageTime: '10:00 AM',
+  lastSentTime: '10:00 AM',
 };
 
 export function Chats() {

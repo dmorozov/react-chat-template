@@ -2,12 +2,12 @@ import clsx from 'clsx';
 import { FaArrowLeft, FaCog, FaFileUpload } from 'react-icons/fa';
 import { FiSend } from "react-icons/fi";
 import { ActionIcon, Box, Input, List } from '@mantine/core';
-import { Chat } from '@/models/chat';
+import { ChatDto } from '@/models/chat';
 import classes from './ChatMessages.module.css';
 
 
 interface ChatMessagesProps {
-  chat: Chat;
+  chat: ChatDto;
 }
 
 export function ChatMessages({ chat }: ChatMessagesProps) {
@@ -48,7 +48,7 @@ export function ChatMessages({ chat }: ChatMessagesProps) {
             }}
           >
             <List.Item>
-              <Box className={classes.chat__time}>{chat.lastMessageTime}</Box>
+              <Box className={classes.chat__time}>{chat.lastSentTime}</Box>
               <Box className={clsx(classes.chat__bubble, classes.chat__bubble__you)}>
                 Hey, I bought something yesterdat but haven't gotten any confirmation. Do you know I
                 if the order went through?
