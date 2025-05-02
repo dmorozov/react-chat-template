@@ -25,7 +25,7 @@ export function ChatMessages({ chat }: ChatMessagesProps) {
                   {chat.name}
                 </Box>
                 <Box component="span" className={classes.chat_member__status}>
-                  Online
+                  Chat description goes here
                 </Box>
               </Box>
             </Box>
