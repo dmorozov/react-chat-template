@@ -16,7 +16,7 @@ const currentChat: ChatDto = {
 
 export function Chats() {
   return (
-    <Box className={clsx(classes.chatsContainer, classes.dark_mode)}>
+    <Box className={clsx(classes.chatsContainer)}>
       <Grid className={clsx(classes.h100, classes.chatsGrid)} gutter={0}>
         <Grid.Col
           className={clsx(classes.h100, classes.messages_page__list_scroll)}
